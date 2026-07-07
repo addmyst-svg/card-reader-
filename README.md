@@ -21,3 +21,6 @@ View your app in AI Studio: https://ai.studio/apps/df3fd06b-5ef1-43eb-a767-dc552
 git add src/data.ts src/vite-env.d.ts
 git commit -m "fix: resolve static image asset paths for production build"
 git push origin main
+git add src/data.ts src/vite-env.d.ts
+git commit -m "fix: resolve static image asset paths for production build"
+git push origin main
