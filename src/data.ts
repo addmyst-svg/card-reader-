@@ -1,11 +1,15 @@
 import { Service, Benefit, Testimonial, FAQItem, GalleryItem } from './types';
+import heroImg from './assets/images/angel_card_hero_1783407405597.jpg';
+import portraitImg from './assets/images/celeste_portrait_1783407420307.jpg';
+import deckImg from './assets/images/angel_cards_deck_1783407432381.jpg';
+import crystalsImg from './assets/images/crystals_feathers_1783407450684.jpg';
 
 // Custom generated image paths from our generation tool
 export const IMAGES = {
-  hero: '/src/assets/images/angel_card_hero_1783407405597.jpg',
-  portrait: '/src/assets/images/celeste_portrait_1783407420307.jpg',
-  deck: '/src/assets/images/angel_cards_deck_1783407432381.jpg',
-  crystals: '/src/assets/images/crystals_feathers_1783407450684.jpg',
+  hero: heroImg,
+  portrait: portraitImg,
+  deck: deckImg,
+  crystals: crystalsImg,
 };
 
 export const SERVICES: Service[] = [
