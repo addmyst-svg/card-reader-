@@ -18,3 +18,6 @@ View your app in AI Studio: https://ai.studio/apps/df3fd06b-5ef1-43eb-a767-dc552
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+git add src/data.ts src/vite-env.d.ts
+git commit -m "fix: resolve static image asset paths for production build"
+git push origin main
