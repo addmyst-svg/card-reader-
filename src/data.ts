@@ -274,7 +274,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'g6',
     title: 'Ethereal White Feathers',
     category: 'White Feathers',
-    imageUrl: 'https://images.unsplash.com/photo-1516244934273-a5ff1ab56402?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'g7',
