@@ -1,0 +1,6 @@
+{
+  "name": "Angel Card Reading & Guidance",
+  "description": "A premium, elegant, and modern website for a professional Angel Card Reader, providing divine guidance, spiritual counseling, energy healing, and comprehensive booking details.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

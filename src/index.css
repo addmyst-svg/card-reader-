@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Poppins", sans-serif;
+  
+  --color-cream: #F8F4EC;
+  --color-lavender: #E8D9FF;
+  --color-gold: #D4AF37;
+  --color-charcoal: #2F2F2F;
+}
+
+/* Custom animations for premium spiritual vibe */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes float-reverse {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-4deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+    filter: blur(40px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.15);
+    filter: blur(60px);
+  }
+}
+
+@keyframes drift-feather {
+  0% {
+    transform: translateY(-10%) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(110%) translateX(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-reverse 6s ease-in-out infinite;
+}
+
+.animate-glow-pulse-1 {
+  animation: pulse-glow 12s ease-in-out infinite;
+}
+
+.animate-glow-pulse-2 {
+  animation: pulse-glow 16s ease-in-out infinite 2s;
+}
+
+.animate-sparkle-1 {
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+.animate-sparkle-2 {
+  animation: sparkle 4s ease-in-out infinite 1.5s;
+}
+
+.animate-sparkle-3 {
+  animation: sparkle 5s ease-in-out infinite 3s;
+}
+
+.feather-particle {
+  position: absolute;
+  pointer-events: none;
+  animation: drift-feather 20s linear infinite;
+  opacity: 0.3;
+}
+
+/* Glassmorphism utility card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(212, 175, 55, 0.04);
+}
+
+.dark .glass-card {
+  background: rgba(20, 18, 24, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Base style resets */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2F2F2F;
+  overflow-x: hidden;
+  background-color: #FDFBF7;
+}
+
+body.dark {
+  background-color: #121016;
+  color: #F8F4EC;
+}
+
+/* Elegant custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(248, 244, 236, 0.5);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(20, 18, 24, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
